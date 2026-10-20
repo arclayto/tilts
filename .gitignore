@@ -1,0 +1,14 @@
+/target
+**/*.rs.bk
+*.pdb
+
+# local data / secrets
+.env
+*.parquet
+!tests/fixtures/**/*.parquet
+
+# editors
+.idea/
+.vscode/
+*.swp
+.DS_Store

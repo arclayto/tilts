@@ -1,0 +1,23 @@
+[package]
+name = "tilts-data"
+description = "Data plumbing for tilts: Ken French factor series, vendor price data, and a local Parquet cache."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+tilts-core.workspace = true
+polars.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+ureq.workspace = true
+zip.workspace = true
+directories.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,25 @@
+[package]
+name = "tilts-core"
+description = "Factor regressions with honest standard errors: OLS, Newey-West, rolling fits, Fama-French model specs."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[features]
+default = []
+# DataFrame adapters (`tilts_core::frame`). Off by default to keep the math layer light.
+polars = ["dep:polars"]
+
+[dependencies]
+nalgebra.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+polars = { workspace = true, optional = true }
+
+[lints]
+workspace = true

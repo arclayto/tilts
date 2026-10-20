@@ -1,0 +1,25 @@
+[package]
+name = "tilts"
+description = "Factor-exposure analysis for real portfolios: regress your holdings on Fama-French factors with honest standard errors."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[[bin]]
+name = "tilts"
+path = "src/main.rs"
+
+[dependencies]
+tilts-core.workspace = true
+tilts-data.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+comfy-table.workspace = true
+
+[lints]
+workspace = true
